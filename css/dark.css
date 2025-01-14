@@ -1,0 +1,66 @@
+
+
+#mode--btn {
+    display: none;
+  }
+  
+.light--mode {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .dark--mode {
+    cursor: pointer;
+  }
+  
+  body:has(#mode--btn:checked) .dark--mode {
+    display: none;
+  }
+  
+  body:has(#mode--btn:checked) .light--mode {
+    display: inline-block;
+  }
+
+
+  :root:has(#mode--btn:checked) {
+    --light-bg-color: #171717;
+    --light-main-color: #fff;
+    --light-sec-color: #7f7f90;
+    --light-bg-dark: #000;
+    --list-color:#fff;
+    --light-bg-white: #171717;
+    --light-main-light: #c17e1f;
+    --light-hover-light: #D68C23;
+    --light-first-color: #252525;
+    --light-second-color: #fff;
+    --light-dark-grey:#fff;
+    --light-card-color: #171717;
+    --light-bg-dark: #fff;
+  }
+
+
+  body:has(#mode--btn:checked) #chefs,
+  body:has(#mode--btn:checked) #contact {
+    background-color: var(--light-first-color);
+    color: #fff;
+  }
+
+
+
+  
+  body:has(#mode--btn:checked) footer {
+    color: #fff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
